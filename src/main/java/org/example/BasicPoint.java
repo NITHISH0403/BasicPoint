@@ -3,33 +3,6 @@ package org.example;
 import java.util.logging.*;
 import java.util.*;
 
-class Point implements  cloneable{
-    String x1 = String.valueOf(10);
-    String y1 = String.valueOf(20);
-    String x2;
-    String y2;
-    Logger l= Logger.getLogger("My Logger");
-    Scanner s = new Scanner(System.in);
-    Point()
-    {
-        l.info("Enter the Co-ordinate of X2 :");
-        x2 =s.nextLine();
-
-        l.info("Enter the Co-ordinate of Y2 :");
-        y2 =s.nextLine();
-    }
-
-    //this method calls object clone().
-    Point clonePoint() {
-        try {
-            //call clone in object.
-            return (Point) super.clone();
-        } catch (CloneNotSupportedException e) {
-            l.info("Cloning not allowed");
-            return this;
-        }
-    }
-}
 class BasicPoint {
     public static void main(String[] args) {
 
