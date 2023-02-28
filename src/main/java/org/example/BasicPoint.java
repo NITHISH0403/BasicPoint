@@ -1,7 +1,6 @@
 package org.example;
 
 import java.util.logging.*;
-import java.util.*;
 
 class BasicPoint {
     public static void main(String[] args) {
